@@ -1,0 +1,25 @@
+{
+  "name": "pick-random-stream",
+  "version": "0.0.0",
+  "description": "Uniformly pick a random value from a stream",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "standard": "^3.6.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/pick-random-stream.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/pick-random-stream/issues"
+  },
+  "homepage": "https://github.com/mafintosh/pick-random-stream"
+}
