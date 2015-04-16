@@ -13,9 +13,9 @@ npm install pick-random-stream
 ``` js
 var random = require('pick-random-stream')
 
-someStream.pipe(random(function (data) {
+someStream.pipe(random()).on('data', function (data) {
   console.log('current random element is', data)
-}))
+})
 ```
 
 The random value will be chosen with propability `1/n`
