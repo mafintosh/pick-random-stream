@@ -6,6 +6,8 @@ Uniformly pick a random value from a stream
 npm install pick-random-stream
 ```
 
+[![build status](http://img.shields.io/travis/mafintosh/pick-random-stream.svg?style=flat)](http://travis-ci.org/mafintosh/pick-random-stream)
+
 ## Usage
 
 ``` js
