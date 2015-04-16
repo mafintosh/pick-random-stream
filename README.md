@@ -21,6 +21,18 @@ someStream.pipe(random()).on('data', function (data) {
 The random value will be chosen with propability `1/n`
 where `n` is the total number of elements in the stream
 
+For example to pick a random node module on npm you can do
+
+``` js
+var JSONStream = require('JSONStream')
+var request = require('request')
+var random = require('pick-random-stream')
+
+request('http://node-modules.com/modules.json').pipe(JSONStream.parse('*')).pipe(random()).on('data', function (module) {
+  console.log('current random module is', module)
+})
+```
+
 ## License
 
 MIT
