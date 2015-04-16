@@ -28,9 +28,12 @@ var JSONStream = require('JSONStream')
 var request = require('request')
 var random = require('pick-random-stream')
 
-request('http://node-modules.com/modules.json').pipe(JSONStream.parse('*')).pipe(random()).on('data', function (module) {
-  console.log('current random module is', module)
-})
+request('http://node-modules.com/modules.json')
+  .pipe(JSONStream.parse('*'))
+  .pipe(random())
+  .on('data', function (module) {
+    console.log('current random module is', module)
+  })
 ```
 
 ## License
